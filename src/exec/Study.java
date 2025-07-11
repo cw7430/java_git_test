@@ -2,11 +2,7 @@ package exec;
 
 public class Study {
 
-	public static void main(String[] args) {
-		// 조건문
-
-		// if
-		int num = 10;
+	private static void ifTest(int num) {
 		if (num > 0) {
 			System.out.println("양수입니다.");
 		} else if (num == 0) {
@@ -14,9 +10,9 @@ public class Study {
 		} else {
 			System.out.println("음수입니다.");
 		}
+	}
 
-		// switch
-		int day = 3;
+	private static void switchTest(int day) {
 		switch (day) {
 		case 1:
 			System.out.println("월요일");
@@ -31,7 +27,16 @@ public class Study {
 			System.out.println("기타 요일");
 			break;
 		}
-		
+	}
+
+	public static void main(String[] args) {
+		// 조건문
+
+		// if
+		ifTest(10);
+
+		// switch
+		switchTest(3);
 
 	}
 
