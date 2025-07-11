@@ -18,7 +18,6 @@ public class Caculate {
 
 	private static Integer division(int x, int y) {
 		if (x == 0) {
-			System.out.println("에러: 0으로 나눌 수 없습니다.");
 			return null;
 		}
 		return y / x;
